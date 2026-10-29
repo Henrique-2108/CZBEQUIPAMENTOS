@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CZB Equipamentos | Ferramentas e Equipamentos</title>
+<style>
+:root{--azul:#1a3a6b;--azul2:#24508f;--bg:#f5f7fb;--card:#fff;--txt:#17202e;--mut:#5b6678;--bd:#dfe5ef;--verde:#1fa855;--red:#d6342c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--azul:#7fa6e6;--azul2:#9bbcf0;--bg:#0f141d;--card:#18202d;--txt:#eaf0fa;--mut:#a3afc2;--bd:#2a3547}}
+:root[data-theme="dark"]{--azul:#7fa6e6;--azul2:#9bbcf0;--bg:#0f141d;--card:#18202d;--txt:#eaf0fa;--mut:#a3afc2;--bd:#2a3547}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.5}
+.wrap{max-width:1050px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--card);border-bottom:1px solid var(--bd);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:900;font-size:1.5rem;color:var(--azul);letter-spacing:1px;line-height:1}
+.logo small{display:block;font-size:.6rem;letter-spacing:2px;font-weight:700}
+nav a{margin-left:16px;color:var(--txt);text-decoration:none;font-weight:600;font-size:.9rem}
+.hero{background:#1a3a6b;color:#fff;padding:56px 0;text-align:center}
+.hero h1{font-size:clamp(1.8rem,6vw,2.8rem);margin:0 0 10px}
+.hero p{margin:0 auto 24px;max-width:520px;opacity:.9}
+.btn{display:inline-block;background:var(--verde);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:10px}
+.btn.alt{background:#fff;color:#1a3a6b;margin-left:8px}
+section{padding:44px 0}
+h2{color:var(--azul);margin:0 0 6px;font-size:1.6rem}
+.sub{color:var(--mut);margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;position:relative}
+.ico{font-size:2.2rem}
+.tag{position:absolute;top:12px;right:12px;background:var(--red);color:#fff;font-size:.72rem;font-weight:800;padding:3px 8px;border-radius:99px}
+.old{color:var(--mut);text-decoration:line-through;font-size:.9rem}
+.new{color:var(--azul);font-size:1.5rem;font-weight:800}
+.val{color:var(--mut);font-size:.8rem;margin:2px 0 12px}
+.card .btn{display:block;text-align:center;padding:10px}
+.empty{color:var(--mut);padding:24px;border:1px dashed var(--bd);border-radius:14px;text-align:center}
+.cat{text-align:center;font-weight:700}
+.cat .ico{display:block;margin-bottom:6px}
+.contact{background:var(--card);border-top:1px solid var(--bd)}
+.contact p{margin:4px 0}
+footer{text-align:center;color:var(--mut);font-size:.85rem;padding:20px 0}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--verde);color:#fff;text-decoration:none;font-weight:700;padding:13px 18px;border-radius:99px;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.sobre{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:center}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.nums .card{text-align:center;padding:14px}
+.nums b{display:block;font-size:1.6rem;color:var(--azul)}
+.steps{counter-reset:s}
+.step{padding-left:56px;position:relative}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:16px;width:28px;height:28px;border-radius:50%;background:var(--azul);color:var(--bg);display:grid;place-items:center;font-weight:800}
+.faq details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:700}
+.faq p{margin:8px 0 0;color:var(--mut)}
+@media(max-width:700px){.sobre{grid-template-columns:1fr}}
+@media(max-width:560px){nav a{margin-left:10px;font-size:.8rem}.btn.alt{margin:8px 0 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo">CZB<small>EQUIPAMENTOS</small></div>
+  <nav><a href="#promocoes">Promoções</a><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <h1>Ferramentas e equipamentos com preço justo</h1>
+  <p>Atendimento rápido pelo WhatsApp e ofertas novas toda semana.</p>
+  <a class="btn" href="#promocoes">Ver promoções</a><a class="btn alt" id="zapHero" href="#">Falar no WhatsApp</a>
+</div></div>
+
+<section id="promocoes"><div class="wrap">
+  <h2>🔥 Promoções</h2>
+  <p class="sub">Ofertas por tempo limitado. Chame no WhatsApp para garantir a sua.</p>
+  <div class="grid" id="promoGrid"></div>
+</div></section>
+
+<section id="produtos" style="padding-top:0"><div class="wrap">
+  <h2>Nossos produtos</h2>
+  <p class="sub">Tudo para obra, oficina e uso profissional.</p>
+  <div class="grid" id="catGrid"></div>
+</div></section>
+
+<section id="sobre"><div class="wrap sobre">
+  <div>
+    <h2>Sobre a CZB Equipamentos</h2>
+    <p class="sub" style="color:var(--txt)">Somos especialistas em ferramentas e equipamentos para quem trabalha de verdade: profissionais, oficinas, construtoras e também quem faz em casa. Trabalhamos com produtos de qualidade, preço justo e atendimento direto, sem enrolação.</p>
+    <p class="sub">[Edite aqui: conte a história da empresa, desde quando atua e a região atendida.]</p>
+  </div>
+  <div class="nums">
+    <div class="card"><b>+10</b>anos de mercado</div>
+    <div class="card"><b>+500</b>produtos</div>
+    <div class="card"><b>100%</b>atendimento direto</div>
+    <div class="card"><b>Rápido</b>resposta no WhatsApp</div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>Por que comprar com a gente</h2>
+  <p class="sub">Compra simples e sem dor de cabeça.</p>
+  <div class="grid">
+    <div class="card"><div class="ico">✅</div><h3 style="margin:6px 0">Qualidade garantida</h3><span class="val">Produtos de marcas confiáveis.</span></div>
+    <div class="card"><div class="ico">💰</div><h3 style="margin:6px 0">Preço justo</h3><span class="val">Promoções novas com frequência.</span></div>
+    <div class="card"><div class="ico">💬</div><h3 style="margin:6px 0">Atendimento humano</h3><span class="val">Tire dúvidas direto no WhatsApp.</span></div>
+    <div class="card"><div class="ico">🚚</div><h3 style="margin:6px 0">Entrega</h3><span class="val">Consulte prazos e regiões atendidas.</span></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>Como comprar</h2>
+  <p class="sub">Em três passos.</p>
+  <div class="grid steps">
+    <div class="card step"><b>Escolha</b><br><span class="val">Veja o produto ou a promoção que você quer.</span></div>
+    <div class="card step"><b>Chame no WhatsApp</b><br><span class="val">Confirmamos estoque, preço e prazo.</span></div>
+    <div class="card step"><b>Receba ou retire</b><br><span class="val">Combine a entrega ou retire na loja.</span></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap faq">
+  <h2>Dúvidas frequentes</h2>
+  <p class="sub">As perguntas mais comuns.</p>
+  <details><summary>Quais formas de pagamento?</summary><p>[Edite: ex. Pix, cartão e boleto.]</p></details>
+  <details><summary>Vocês entregam?</summary><p>[Edite: regiões e prazos de entrega.]</p></details>
+  <details><summary>Tem garantia nos produtos?</summary><p>[Edite: prazo e condições de garantia.]</p></details>
+</div></section>
+
+<section id="contato" class="contact"><div class="wrap">
+  <h2>Contato</h2>
+  <p>📱 WhatsApp: <strong>(19) 97154-5730</strong></p>
+  <p>📍 Endereço: [Edite: rua, número, cidade]</p>
+  <p>🕒 Horário: [Edite: ex. seg a sex 8h às 18h, sáb 8h às 12h]</p>
+  <p style="margin-bottom:16px">Mande uma mensagem e responderemos o quanto antes.</p>
+  <a class="btn" id="zapContato" href="#">Chamar no WhatsApp</a>
+</div></section>
+
+<footer>© <span id="ano"></span> CZB Equipamentos. Todos os direitos reservados.</footer>
+<a class="fab" id="zapFab" href="#">💬 WhatsApp</a>
+
+<script>
+/* =====================================================
+   ÁREA DE EDIÇÃO — só mexer aqui para trocar as promoções
+   Para remover uma promoção, apague o bloco { ... }.
+   Para adicionar, copie um bloco e mude os textos.
+   Se a lista ficar vazia, o site avisa que não há ofertas.
+   ===================================================== */
+const WHATSAPP = "5519971545730";
+
+const PROMOCOES = [
+  { icone: "🔧", nome: "Jogo de chaves combinadas (exemplo)", de: 189.90, por: 149.90, validade: "Até 30/11" },
+  { icone: "🪛", nome: "Kit de chaves de fenda (exemplo)", de: 79.90, por: 59.90, validade: "Até 30/11" },
+  { icone: "⚡", nome: "Furadeira de impacto (exemplo)", de: 399.00, por: 329.00, validade: "Enquanto durar o estoque" },
+  { icone: "🔩", nome: "Maleta de ferramentas (exemplo)", de: 259.00, por: 219.00, validade: "Até 15/12" }
+];
+
+const CATEGORIAS = [
+  ["🔧", "Ferramentas manuais"], ["⚡", "Ferramentas elétricas"],
+  ["🔋", "A bateria"], ["🦺", "Segurança (EPIs)"],
+  ["📏", "Medição"], ["🧰", "Acessórios"]
+];
+/* ================= FIM DA ÁREA DE EDIÇÃO ================= */
+
+const brl = v => v.toLocaleString("pt-BR", {style:"currency", currency:"BRL"});
+const zap = msg => "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+const g = document.getElementById("promoGrid");
+if (!PROMOCOES.length) {
+  g.innerHTML = '<div class="empty" style="grid-column:1/-1">No momento não temos promoções. Volte em breve!</div>';
+} else {
+  g.innerHTML = PROMOCOES.map(p => {
+    const off = p.de ? Math.round((1 - p.por / p.de) * 100) : 0;
+    return '<div class="card">' + (off > 0 ? '<span class="tag">-' + off + '%</span>' : '') +
+      '<div class="ico">' + esc(p.icone || "🔧") + '</div><h3 style="margin:6px 0">' + esc(p.nome) + '</h3>' +
+      (p.de ? '<div class="old">' + brl(p.de) + '</div>' : '') +
+      '<div class="new">' + brl(p.por) + '</div>' +
+      '<div class="val">' + esc(p.validade || "") + '</div>' +
+      '<a class="btn" href="' + zap("Olá! Tenho interesse na promoção: " + p.nome) + '">Quero essa</a></div>';
+  }).join("");
+}
+
+document.getElementById("catGrid").innerHTML = CATEGORIAS.map(c =>
+  '<div class="card cat"><span class="ico">' + c[0] + '</span>' + esc(c[1]) + '</div>').join("");
+
+["zapHero","zapContato","zapFab"].forEach(id => document.getElementById(id).href = zap("Olá! Vim pelo site da CZB Equipamentos."));
+document.getElementById("ano").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
